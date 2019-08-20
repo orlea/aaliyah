@@ -1,0 +1,12 @@
+{
+    "name": "aaliyah",
+    "version": "0.0.0",
+    "description": "Mastodon bot",
+    "main": "src/app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "aries@asterism.xyz",
+    "license": "MIT"
+  }
+  
