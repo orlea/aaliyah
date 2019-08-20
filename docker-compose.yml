@@ -1,7 +1,7 @@
 version: "3"
 services:
   aaliyah:
-    build: .
+    image: orlea/aaliyah:latest
     env_file: .env
     volumes:
       - ./src:/src

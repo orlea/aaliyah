@@ -8,7 +8,7 @@ BOTアカウントのHTLに流れてきたメディア付きの投稿を、特�
 ## usage
 
 ```
-cp .env.sample .env
+wget https://raw.githubusercontent.com/orlea/aaliyah/master/docker-compose.yml
 vim .env
 sudo docker-compose up
 ```

@@ -1,0 +1,13 @@
+kind: pipeline
+name: default
+
+steps:
+- name: docker-build
+  image: plugins/docker
+  settings:
+    repo: orlea/aaliyah
+    tags: latest
+    username:
+      from_secret: USER_ID
+    password:
+      from_secret: PASSWD
