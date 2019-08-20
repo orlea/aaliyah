@@ -7,6 +7,9 @@
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "aries@asterism.xyz",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+      "megalodon": "^0.9.0"
+    }
   }
   
