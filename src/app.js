@@ -6,15 +6,15 @@ const target_account = process.env.TARGET_ACCOUNT
 
 const client = new Mastodon(access_token, BASE_URL + '/api/v1')
 const stream = client.stream('/streaming/user')
+var text=target_account
 
 stream.on('update', status => {
   if(status.media_attachments.length != 0){
     console.log(status.url)
-
+    text = target_account + " " + status.url
     client.post('/statuses', {
-      status: status.url,
-      visibility: "direct",
-      mention: {acct: target_account}
+      status: text,
+      visibility: "direct"
     })
   }
 })
