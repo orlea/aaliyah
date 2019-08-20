@@ -1,6 +1,8 @@
 version: "3"
 services:
   aaliyah:
-    image: orlea/aaliyah:latest
+    build: .
     env_file: .env
+    volumes:
+      - ./src:/src
     command: "node src/app.js"
