@@ -7,7 +7,7 @@ steps:
   settings:
     repo: orlea/aaliyah
     tags: latest
-   username:
+    username:
       from_secret: docker_username
     password:
       from_secret: docker_password
