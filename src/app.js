@@ -15,6 +15,10 @@ stream.on('update', status => {
     client.post('/statuses', {
       status: text,
       visibility: "direct"
+    }).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
     })
   }
 })
