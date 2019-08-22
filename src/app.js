@@ -28,3 +28,15 @@ stream.on('update', status => {
     })
   }
 })
+
+stream.on('error', err => {
+  console.error(err)
+})
+
+stream.on('heartbeat', msg => {
+  console.log('thump.')
+})
+
+stream.on('connection-limit-exceeded', err => {
+  console.error(err)
+})
